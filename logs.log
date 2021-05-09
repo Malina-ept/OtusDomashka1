@@ -2,3 +2,162 @@
 2021-04-21 08:04:02,180 INFO NewTestOtus [main] Тест стaрт
 2021-04-21 08:04:05,025 INFO NewTestOtus [main] Сайт открыт
 2021-04-21 08:04:05,025 INFO NewTestOtus [main] Проверяем title страницы
+2021-05-08 17:30:21,532 INFO NewTestOtusCookies [main] Драйвер поднят
+2021-05-08 17:30:32,335 INFO NewTestOtusCookies [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, _ym_d=1620484229; expires=вс, 08 мая 2022 05:30:29 MSK; path=/; domain=.otus.ru;secure;, sessionid=f1d111d1hgo6qnwdfnw6n0ef81h712c9; expires=пт, 06 авг. 2021 05:30:28 MSK; path=/; domain=otus.ru, oid=76cd49cd2ec576f76078eac606e56347; expires=вт, 07 мая 2024 05:30:28 MSK; path=/; domain=.otus.ru, _ym_visorc=w; expires=сб, 08 мая 2021 06:00:29 MSK; path=/; domain=.otus.ru;secure;, _gid=GA1.2.1098617314.1620484229; expires=вс, 09 мая 2021 05:30:29 MSK; path=/; domain=.otus.ru, utm=utm_source%3Dtypein%26utm_medium%3Ddirect%26utm_campaign%3DNone; expires=вт, 07 мая 2024 05:30:28 MSK; path=/; domain=otus.ru, _ym_uid=1620484229620905941; expires=вс, 08 мая 2022 05:30:29 MSK; path=/; domain=.otus.ru;secure;, _ym_isad=2; expires=вс, 09 мая 2021 01:30:29 MSK; path=/; domain=.otus.ru;secure;, _ga=GA1.2.1656376098.1620484229; expires=пн, 08 мая 2023 05:30:29 MSK; path=/; domain=.otus.ru, _fbp=fb.1.1620484229589.11543234; expires=пт, 06 авг. 2021 05:30:30 MSK; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-05-08 17:30:32,346 INFO NewTestOtusCookies [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-05-08 17:30:56,577 INFO NewTestOtusCookies [main] Драйвер поднят
+2021-05-08 17:30:56,715 INFO NewTestOtusCookies [main] (1552, 840)
+2021-05-08 17:30:57,967 INFO NewTestOtusCookies [main] (8, 8)
+2021-05-08 17:32:47,160 INFO NewTestOtusCookies [main] Драйвер поднят
+2021-05-08 17:32:55,707 INFO NewTestOtusCookies [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, _ym_d=1620484375; expires=вс, 08 мая 2022 05:32:54 MSK; path=/; domain=.otus.ru;secure;, sessionid=iffkxasbek8hmuyzygdp64k3cvbrd76d; expires=пт, 06 авг. 2021 05:32:54 MSK; path=/; domain=otus.ru, oid=d1f62283eb084575ed7b8a6a10c31e22; expires=вт, 07 мая 2024 05:32:54 MSK; path=/; domain=.otus.ru, _ym_visorc=w; expires=сб, 08 мая 2021 06:02:55 MSK; path=/; domain=.otus.ru;secure;, _gid=GA1.2.1010097257.1620484375; expires=вс, 09 мая 2021 05:32:54 MSK; path=/; domain=.otus.ru, utm=utm_source%3Dtypein%26utm_medium%3Ddirect%26utm_campaign%3DNone; expires=вт, 07 мая 2024 05:32:54 MSK; path=/; domain=otus.ru, _ym_uid=1620484375652438435; expires=вс, 08 мая 2022 05:32:54 MSK; path=/; domain=.otus.ru;secure;, _ym_isad=2; expires=вс, 09 мая 2021 01:32:55 MSK; path=/; domain=.otus.ru;secure;, _ga=GA1.2.838662823.1620484375; expires=пн, 08 мая 2023 05:32:54 MSK; path=/; domain=.otus.ru, _fbp=fb.1.1620484375235.1474509525; expires=пт, 06 авг. 2021 05:32:55 MSK; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-05-08 17:32:55,717 INFO NewTestOtusCookies [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-05-08 17:56:55,825 INFO NewTestOtusCookies [main] Драйвер поднят
+2021-05-08 17:56:55,952 INFO NewTestOtusCookies [main] (1552, 840)
+2021-05-08 17:56:57,192 INFO NewTestOtusCookies [main] (8, 8)
+2021-05-08 17:57:33,532 INFO NewTestOtusCookies [main] Драйвер поднят
+2021-05-08 17:57:33,670 INFO NewTestOtusCookies [main] (1552, 840)
+2021-05-08 17:57:34,923 INFO NewTestOtusCookies [main] (8, 8)
+2021-05-08 19:37:24,633 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 19:37:33,866 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 19:37:33,866 INFO TestLesson7 [main] Проверяем title страницы
+2021-05-08 19:39:56,811 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 19:40:06,117 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 19:40:06,117 INFO TestLesson7 [main] Проверяем title страницы
+2021-05-08 20:12:38,372 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:12:46,465 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:12:49,030 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 20:12:49,030 INFO TestLesson7 [main] Проверяем title страницы Контакты
+2021-05-08 20:13:59,695 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:14:08,538 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:14:10,978 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 20:14:10,979 INFO TestLesson7 [main] Проверяем title страницы Контакты
+2021-05-08 20:31:42,538 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:31:51,243 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:31:51,243 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 20:31:51,243 INFO TestLesson7 [main] Проверяем title страницы Контакты
+2021-05-08 20:35:59,260 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:36:07,533 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:36:07,533 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 20:36:07,533 INFO TestLesson7 [main] Проверяем title страницы Контакты
+2021-05-08 20:39:43,295 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:39:52,760 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:39:52,761 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 20:39:52,761 INFO TestLesson7 [main] Проверяем title страницы Контакты
+2021-05-08 20:44:00,893 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:44:10,073 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:45:23,485 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:45:31,780 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:46:24,313 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 20:46:32,925 INFO TestLesson7 [main] Сайт открыт
+2021-05-08 20:46:36,275 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 20:46:36,275 INFO TestLesson7 [main] Проверяем title страницы Контакты
+2021-05-08 21:25:33,244 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:25:42,668 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:27:11,699 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:27:21,329 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:28:16,797 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:28:26,977 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:31:58,092 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:32:08,757 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:38:09,402 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:38:19,117 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:38:57,522 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:39:06,555 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:40:04,617 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:40:14,016 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:40:33,061 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:40:42,341 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:41:05,581 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:41:15,155 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:41:55,336 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:41:55,944 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:42:05,264 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:42:06,090 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:46:59,783 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:47:09,401 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 21:47:09,446 INFO TestLesson7 [main] Адрес соответствует ожидаемому
+2021-05-08 21:47:24,264 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 21:47:33,279 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 22:02:08,779 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 22:02:17,895 INFO TestLesson7 [main] (1552, 840)
+2021-05-08 22:02:17,896 INFO TestLesson7 [main] Открыто окно браузера на полный экран
+2021-05-08 22:02:59,194 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 22:03:08,134 INFO TestLesson7 [main] Открыто окно браузера на полный экран
+2021-05-08 22:03:08,219 INFO TestLesson7 [main] (1552, 840)
+2021-05-08 22:03:59,106 INFO TestLesson7 [main] Драйвер поднят
+2021-05-08 22:04:08,822 INFO TestLesson7 [main] Открыта страница Контакты
+2021-05-08 22:04:08,866 INFO TestLesson7 [main] Адрес соответствует ожидаемому
+2021-05-09 14:50:16,958 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 14:50:26,106 INFO TestLesson7 [main] Открыто окно браузера на полный экран
+2021-05-09 14:50:26,147 INFO TestLesson7 [main] (1552, 840)
+2021-05-09 14:56:26,200 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 14:56:34,392 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 14:56:35,904 INFO TestLesson7 [main] Открыта страница FAQ
+2021-05-09 15:03:54,740 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:04:03,028 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:04:04,480 INFO TestLesson7 [main] Открыта страница FAQ
+2021-05-09 15:04:05,074 INFO TestLesson7 [main] Текст соответствует ожидаемому
+2021-05-09 15:04:23,461 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:04:32,223 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:04:33,646 INFO TestLesson7 [main] Открыта страница FAQ
+2021-05-09 15:22:26,293 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:22:34,522 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:23:32,014 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:23:40,762 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:23:40,805 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:23:41,455 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:24:09,374 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:24:17,473 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:24:17,530 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:24:18,166 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:25:30,749 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:25:39,195 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:25:39,235 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:25:39,844 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:27:37,872 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:27:47,239 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:27:47,279 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:27:48,801 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:27:50,846 INFO TestLesson7 [main] Текст Вы успешно подписались
+2021-05-09 15:29:39,758 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:29:48,060 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:29:48,121 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:29:49,663 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:29:51,693 INFO TestLesson7 [main] Текст Вы успешно подписались
+2021-05-09 15:31:52,973 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:32:01,199 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:32:01,262 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:32:01,958 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:32:02,043 INFO TestLesson7 [main] Текст Вы успешно подписались
+2021-05-09 15:32:30,945 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:32:39,732 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:32:39,778 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:32:40,382 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:32:40,474 INFO TestLesson7 [main] Текст Вы успешно подписались
+2021-05-09 15:38:27,376 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:38:36,133 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 15:38:36,192 INFO TestLesson7 [main] Поле email очищено
+2021-05-09 15:38:36,816 INFO TestLesson7 [main] Нажата кнопка Подписаться
+2021-05-09 15:38:36,898 INFO TestLesson7 [main] Текст Вы успешно подписались
+2021-05-09 15:55:08,872 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 15:55:26,542 INFO TestLesson7 [main] Сайт Tele2 открыт
+2021-05-09 15:55:26,625 INFO TestLesson7 [main] введены 97 в поиск номера
+2021-05-09 16:06:00,590 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 16:06:19,555 INFO TestLesson7 [main] Сайт Tele2 открыт
+2021-05-09 16:06:19,640 INFO TestLesson7 [main] введены 97 в поиск номера
+2021-05-09 16:18:34,295 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 16:18:49,778 INFO TestLesson7 [main] Сайт Tele2 открыт
+2021-05-09 16:18:49,858 INFO TestLesson7 [main] введены 97 в поиск номера
+2021-05-09 16:18:49,986 INFO TestLesson7 [main] Появилась кнопка Показать еще
+2021-05-09 16:19:33,344 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 16:19:48,604 INFO TestLesson7 [main] Сайт Tele2 открыт
+2021-05-09 16:19:48,710 INFO TestLesson7 [main] введены 97 в поиск номера
+2021-05-09 16:19:48,835 INFO TestLesson7 [main] Появилась кнопка Показать еще
+2021-05-09 16:24:40,635 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 16:24:57,452 INFO TestLesson7 [main] Сайт Tele2 открыт
+2021-05-09 16:24:57,528 INFO TestLesson7 [main] введены 97 в поиск номера
+2021-05-09 16:24:57,650 INFO TestLesson7 [main] Появилась кнопка Показать еще
+2021-05-09 16:25:09,051 INFO TestLesson7 [main] Драйвер поднят
+2021-05-09 16:25:18,335 INFO TestLesson7 [main] Сайт открыт
+2021-05-09 16:25:19,729 INFO TestLesson7 [main] Открыта страница FAQ
+2021-05-09 16:25:20,319 INFO TestLesson7 [main] Текст соответствует ожидаемому
