@@ -161,3 +161,117 @@
 2021-05-09 16:25:18,335 INFO TestLesson7 [main] Сайт открыт
 2021-05-09 16:25:19,729 INFO TestLesson7 [main] Открыта страница FAQ
 2021-05-09 16:25:20,319 INFO TestLesson7 [main] Текст соответствует ожидаемому
+2021-05-09 20:43:50,578 INFO NewTestOtusScreen [main] Драйвер поднят
+2021-05-09 21:14:28,003 INFO NewTestOtusScreen [main] Драйвер поднят
+2021-05-09 21:19:39,771 INFO NewTestOtusScreen [main] Драйвер поднят
+2021-05-10 17:34:49,402 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:34:57,326 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:34:57,327 INFO TestLesson8 [main] Проверяем title страницы
+2021-05-10 17:46:43,905 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:46:52,177 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:53:36,720 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:53:44,918 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:54:30,367 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:54:38,753 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:56:03,335 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:56:11,545 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:56:37,287 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:56:46,006 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:56:50,365 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 17:57:05,487 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 17:57:13,897 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 17:57:17,617 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:02:39,849 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:02:48,732 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:02:52,051 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:02:53,319 INFO TestLesson8 [main] Выбрать марки Makita и Зубр
+2021-05-10 18:03:15,109 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:03:33,252 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:03:36,587 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:03:47,612 INFO TestLesson8 [main] Выбрать марки Makita и Зубр
+2021-05-10 18:10:16,742 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:10:24,906 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:10:27,808 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:10:28,882 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:11:52,217 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:12:00,673 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:12:04,533 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:12:05,390 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:15:24,616 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:15:32,726 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:15:36,142 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:15:37,299 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:17:31,182 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:17:39,834 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:17:43,971 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:17:44,961 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:19:26,680 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:19:35,106 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:19:39,004 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:19:39,915 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:20:37,115 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:20:45,094 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:20:45,230 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:20:48,578 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:20:49,414 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:28:52,390 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:29:00,803 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:29:00,946 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:29:03,847 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:29:04,784 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:29:06,632 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:30:20,375 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:30:28,477 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:30:28,625 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:30:32,163 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:30:32,612 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:30:37,365 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:32:11,805 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:32:19,944 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:32:20,073 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:32:23,426 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:32:24,317 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:32:26,180 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:33:31,860 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:33:39,974 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:33:40,116 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:34:21,231 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:34:29,363 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:34:29,482 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:34:33,012 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:34:33,973 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:34:35,589 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:35:48,082 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:35:56,225 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:35:56,363 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:35:59,863 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:36:00,722 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:36:02,496 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:48:13,142 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:48:13,986 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:48:21,719 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:48:21,876 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:48:22,821 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:48:23,060 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:48:27,980 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:48:28,318 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:48:28,867 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:48:31,164 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:48:32,029 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:48:33,831 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:48:56,876 INFO TestLesson8 [main] Добавлен к сравнению первый Зубр
+2021-05-10 18:58:21,744 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 18:58:30,071 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 18:58:30,204 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 18:58:34,737 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 18:58:35,641 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 18:58:37,945 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 18:58:59,209 INFO TestLesson8 [main] Сортировка по Возрастанию цены
+2021-05-10 19:38:41,967 INFO TestLesson8 [main] Драйвер поднят
+2021-05-10 19:38:50,758 INFO TestLesson8 [main] Сайт открыт
+2021-05-10 19:38:50,877 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-05-10 19:38:54,767 INFO TestLesson8 [main] Открыт раздел Перфораторы
+2021-05-10 19:38:55,765 INFO TestLesson8 [main] Выбраы марки Makita и Зубр
+2021-05-10 19:38:57,894 INFO TestLesson8 [main] Применен фильтра с  марками Makita и Зубр
+2021-05-10 19:39:19,161 INFO TestLesson8 [main] Сортировка по Возрастанию цены
+2021-05-10 19:39:19,530 INFO TestLesson8 [main] Добавлен к сравнению первый Зубр
