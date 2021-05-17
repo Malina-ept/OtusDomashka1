@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,8 +23,9 @@ public class TestLesson7 {
     private static final String EXPECTED_OTUS_CONTACTS_TEXT = "125167, г. Москва, Нарышкинская аллея., д. 5, стр. 2, тел. +7 499 938-92-02";
     private static final String OTUS_WEBSITE_HOME_PAGE = "https://otus.ru";
 
-    //@FindBy(xpath = "//header//a[@href='/contacts/']")
-    //private WebElement contactsButton;
+    @FindBy(xpath = "//header//a[@href='/contacts/']")
+    private WebElement contactsButton;
+
 
     private Logger logger = LogManager.getLogger(TestLesson7.class);
     protected WebDriver driver;
@@ -56,7 +58,9 @@ public class TestLesson7 {
     public void checkTitleContacts() {
         driver.get(OTUS_WEBSITE_HOME_PAGE);
         logger.info("Сайт открыт");
-        driver.findElement(By.xpath("//header//a[@href='/contacts/']")).click();
+        PageFactory.initElements(driver, this);
+        contactsButton.click();
+        //driver.findElement(By.xpath("//header//a[@href='/contacts/']")).click();
         logger.info("Открыта страница Контакты");
         logger.info("Проверяем title страницы Контакты");
         String actualTitle = driver.getTitle();
@@ -69,7 +73,7 @@ public class TestLesson7 {
     public void checkAdressInContacts() {
         driver.get("https://otus.ru/contacts");
         logger.info("Открыта страница Контакты");
-        assertEquals( "Адрес не соответствует ожидаемому",EXPECTED_OTUS_CONTACTS_TEXT, driver.findElement(By.cssSelector("#__next > div.sc-2em8v9-0.etvoKo > div.sc-2em8v9-1.kiwtMy > div.sc-1hmcglv-0.iiFycX > div:nth-child(3) > div.c0qfa0-5.cXQVNI")).getText());
+        assertEquals( "Адрес не соответствует ожидаемому",EXPECTED_OTUS_CONTACTS_TEXT, driver.findElement(By.xpath("//div[text()='Адрес']/../div[2]")).getText());
     }
 
     @Test
@@ -117,7 +121,8 @@ public class TestLesson7 {
         logger.info("введены 97 в поиск номера");
         //WebDriverWait wait = new WebDriverWait(driver, 10);
         //wait.until(ExpectedConditions.visibilityOf((WebElement) By.cssSelector("#root > div > div.height-holder-mobile > div > div > div > div > div.main-content > div:nth-child(1) > div > div > div > div.catalog-numbers.with-overlay.overlay-big > div > div > div.center.left-xs > a")));
-        assertEquals( "Кнопка 'Показать еще' не появилась", "Показать еще", driver.findElement(By.cssSelector("#root > div > div.height-holder-mobile > div > div > div > div > div.main-content > div:nth-child(1) > div > div > div > div.catalog-numbers.with-overlay.overlay-big > div > div > div.center.left-xs > a")).getText());
+        WebElement someElem = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#root > div > div.height-holder-mobile > div > div > div > div > div.main-content > div:nth-child(1) > div > div > div > div.catalog-numbers.with-overlay.overlay-big > div > div > div.center.left-xs > a")));
+        assertEquals( "Кнопка 'Показать еще' не появилась", "Показать еще", someElem.getText());
         logger.info("Появилась кнопка 'Показать еще'");
 
     }

@@ -18,6 +18,7 @@ import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestLesson8 {
 
@@ -53,8 +54,9 @@ public class TestLesson8 {
         logger.info("Открыто окно браузера на полный экран");
         logger.info("Переходим в раздел Бытовая техника-Стиральные машины");
         driver.findElement(By.xpath("//div[@class='MainHeader__catalog']")).click();
+        logger.info("Открыто меню Каталог товаров");
 
-        WebElement openHomeAppliances = driver.findElement(By.xpath("//svg[@class='CatalogMenu__category-icon Icon']"));
+        WebElement openHomeAppliances = driver.findElement(By.xpath("//div[@class='CatalogMenu__category-items js--CatalogMenu__category-items'][3]"));
         Actions action = new Actions(driver);
         action.moveToElement(openHomeAppliances).pause(800L).perform();
 
@@ -63,38 +65,73 @@ public class TestLesson8 {
 
         logger.info("Выберем на странице чекбокс BOSCH");
         driver.findElement(By.xpath("//input[@id='1907_325bosch']")).click();
-        //Thread.sleep(10000);
-        //By checkboxLG = new WebElement(By.xpath("//input[@id='1907_325lg']"));
         logger.info("Чекбокс BOSCH выбран");
-
-        //WebElement checkboxLG = (WebElement) By.xpath("//input[@id='1907_325lg']");
         logger.info("Выберем на странице чекбокс Electrolux");
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='1907_325electrolux']")));
         driver.findElement(By.xpath("//input[@id='1907_325electrolux']")).click();
         logger.info("Чекбокс Electrolux выбран");
-        //Thread.sleep(10000);
 
-        //WebElement sortPrice = (WebElement) By.xpath("//div[@data-alias='price']");
+        WebElement sortPrice = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@data-alias='price']")));
         logger.info("Отсортируем полученные результаты по цене");
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-alias='price']")));
-        driver.findElement(By.xpath("//div[@data-alias='price']")).click();
+        sortPrice.click();
 
-
+        //После сортировки нельзя выбрать нужные селекторы, они перехвачены и некликабельны, хз как это решить
+        //Отдельно тест с этими элементами работает корректно, а как собрать вместе(переключить фокус на страницу) - хз
         logger.info("Выберем первую в списке BOSCH");
         driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'BOSCH')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
-        logger.info("А теперь Выберем первую в списке Electrolux");
+        logger.info("А теперь Выберем первую в списке ELECTROLUX");
         driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'ELECTROLUX')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
-        logger.info("Выбраны для сравнения первая BOSCH и первая Electrolux");
+        logger.info("Выбраны для сравнения первая BOSCH и первая ELECTROLUX");
 
         logger.info("Перейдём на страницу сравнения");
         driver.findElement(By.xpath("//div[@class='HeaderMenu__buttons  HeaderMenu__buttons_compare']")).click();
         logger.info("Открыта страница сравнения");
+        String actualName = driver.findElement(By.cssSelector("body > div.MainWrapper > div.MainLayout.js--MainLayout.HeaderFixer > main > div > div > div.Compare.js--Compare > div.Compare__content.js--Compare__content > div.Compare__content-wrap > div.Compare__content-main-wrap.js--Compare__content-main-wrap > div > div.Compare__content-head.js--Compare__content-head > div.Compare__product-table.js--Compare__product-table > div.Compare__product-row.Compare__product-name-render.js--Compare__product-name-render")).getText();
+        //System.out.println(actualName);
+        assertTrue(actualName.contains("ELECTROLUX"));
+        assertTrue(actualName.contains("BOSCH"));
+        logger.info("На странице сравнения есть ELECTROLUX и BOSCH");
+    }
 
-        Thread.sleep(1000);
+    @Test
+    public void sortPrice() throws InterruptedException {
+
+        driver.get("https://www.citilink.ru/catalog/stiralnye-mashiny/?f=discount.any%2C1907_325bosch%2C1907_325electrolux&pf=discount.any%2C1907_325bosch&sorting=relevance_asc");
+        logger.info("Сайт открыт");
+        driver.manage().window().maximize();
+        logger.info("Открыто окно браузера на полный экран");
+        logger.info("Отсортируем полученные результаты по цене");
+        driver.findElement(By.xpath("//div[@data-alias='price']")).click();
+        logger.info("Результаты отсортированы по цене");
+    }
+
+        @Test
+    public void checkСomparisons() throws InterruptedException {
+        //WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        driver.get("https://www.citilink.ru/catalog/stiralnye-mashiny/?f=discount.any%2C1907_325bosch%2C1907_325electrolux&pf=discount.any%2C1907_325bosch&sorting=relevance_asc");
+        logger.info("Сайт открыт");
+        driver.manage().window().maximize();
+        logger.info("Открыто окно браузера на полный экран");
+        logger.info("Выберем первую в списке BOSCH");
+        driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'BOSCH')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
+        logger.info("А теперь Выберем первую в списке ELECTROLUX");
+        driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'ELECTROLUX')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
+        logger.info("Выбраны для сравнения первая BOSCH и первая ELECTROLUX");
+        logger.info("Перейдём на страницу сравнения");
+        driver.findElement(By.xpath("//div[@class='HeaderMenu__buttons  HeaderMenu__buttons_compare']")).click();
+        logger.info("Открыта страница сравнения");
+        String actualName = driver.findElement(By.cssSelector("body > div.MainWrapper > div.MainLayout.js--MainLayout.HeaderFixer > main > div > div > div.Compare.js--Compare > div.Compare__content.js--Compare__content > div.Compare__content-wrap > div.Compare__content-main-wrap.js--Compare__content-main-wrap > div > div.Compare__content-head.js--Compare__content-head > div.Compare__product-table.js--Compare__product-table > div.Compare__product-row.Compare__product-name-render.js--Compare__product-name-render")).getText();
+        //System.out.println(actualName);
+        assertTrue(actualName.contains("ELECTROLUX"));
+        assertTrue(actualName.contains("BOSCH"));
+        logger.info("На странице сравнения есть ELECTROLUX и BOSCH");
+
+
+
 
     }
 
-    private void saveFile(File data) {
+        private void saveFile(File data) {
         String fileName = "target/" + System.currentTimeMillis() + ".png";
         try {
             FileUtils.copyFile(data, new File(fileName));
