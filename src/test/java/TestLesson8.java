@@ -81,9 +81,9 @@ public class TestLesson8 {
         //После сортировки нельзя выбрать нужные селекторы, они перехвачены и некликабельны, хз как это решить
         //Отдельно тест с этими элементами работает корректно, а как собрать вместе(переключить фокус на страницу) - хз
         logger.info("Выберем первую в списке BOSCH");
-        driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'BOSCH')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
+        driver.findElement(By.xpath("(//div[contains(@data-params, 'BOSCH' )]//label)[1]")).click();
         logger.info("А теперь Выберем первую в списке ELECTROLUX");
-        driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'ELECTROLUX')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
+        driver.findElement(By.xpath("(//div[contains(@data-params, 'ELECTROLUX' )]//label)[1]")).click();
         logger.info("Выбраны для сравнения первая BOSCH и первая ELECTROLUX");
 
         logger.info("Перейдём на страницу сравнения");
@@ -117,17 +117,19 @@ public class TestLesson8 {
         driver.manage().window().maximize();
         logger.info("Открыто окно браузера на полный экран");
         logger.info("Выберем первую в списке BOSCH");
-        driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'BOSCH')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
+        driver.findElement(By.xpath("(//div[contains(@data-params, 'BOSCH' )]//label)[1]")).click();
         logger.info("А теперь Выберем первую в списке ELECTROLUX");
-        driver.findElement(By.xpath("(//*[@class='ProductGroupList js--ProductGroupList']//div[contains(@data-params, 'ELECTROLUX')]//*[contains(@class, 'ProductCardButton__button-add')])[1]")).click();
+        driver.findElement(By.xpath("(//div[contains(@data-params, 'ELECTROLUX' )]//label)[1]")).click();
         logger.info("Выбраны для сравнения первая BOSCH и первая ELECTROLUX");
         logger.info("Перейдём на страницу сравнения");
         driver.findElement(By.xpath("//div[@class='HeaderMenu__buttons  HeaderMenu__buttons_compare']")).click();
         logger.info("Открыта страница сравнения");
-        String actualName = driver.findElement(By.cssSelector("body > div.MainWrapper > div.MainLayout.js--MainLayout.HeaderFixer > main > div > div > div.Compare.js--Compare > div.Compare__content.js--Compare__content > div.Compare__content-wrap > div.Compare__content-main-wrap.js--Compare__content-main-wrap > div > div.Compare__content-head.js--Compare__content-head > div.Compare__product-table.js--Compare__product-table > div.Compare__product-row.Compare__product-name-render.js--Compare__product-name-render")).getText();
-        //System.out.println(actualName);
-        assertTrue(actualName.contains("ELECTROLUX"));
-        assertTrue(actualName.contains("BOSCH"));
+        String actualNameElectrolux = driver.findElement(By.xpath("//div[@class=' Compare__product-cell js--Compare__product-cell Compare__product-cell_name']//a")).getText();
+        System.out.println(actualNameElectrolux);
+        String actualNameBosch = driver.findElement(By.xpath("(//div[@class=' Compare__product-cell js--Compare__product-cell Compare__product-cell_name']//a)[2]")).getText();
+        System.out.println(actualNameBosch);
+        assertTrue(actualNameElectrolux.contains("ELECTROLUX"));
+        assertTrue(actualNameBosch.contains("BOSCH"));
         logger.info("На странице сравнения есть ELECTROLUX и BOSCH");
 
 
