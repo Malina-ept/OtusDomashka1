@@ -50,13 +50,17 @@ public class TestLesson8 {
 
         driver.get("https://www.citilink.ru/");
         logger.info("Сайт открыт");
-        driver.manage().window().maximize();
-        logger.info("Открыто окно браузера на полный экран");
+        //driver.manage().window().maximize();
+        //logger.info("Открыто окно браузера на полный экран");
+
+        driver.manage().window().setSize(new Dimension(1900,800));
+        logger.info("Открыто окно браузера 1900*800");
+
         logger.info("Переходим в раздел Бытовая техника-Стиральные машины");
         driver.findElement(By.xpath("//div[@class='MainHeader__catalog']")).click();
         logger.info("Открыто меню Каталог товаров");
 
-        WebElement openHomeAppliances = driver.findElement(By.xpath("//div[@class='CatalogMenu__category-items js--CatalogMenu__category-items'][3]"));
+        WebElement openHomeAppliances = driver.findElement(By.xpath("//a[contains(@data-title, 'Бытовая техника')]"));
         Actions action = new Actions(driver);
         action.moveToElement(openHomeAppliances).pause(800L).perform();
 
