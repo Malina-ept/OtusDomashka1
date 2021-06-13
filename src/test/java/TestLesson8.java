@@ -99,6 +99,7 @@ public class TestLesson8 {
     @Test
     public void sortPrice() throws InterruptedException {
 
+
         driver.get("https://www.citilink.ru/catalog/stiralnye-mashiny/?f=discount.any%2C1907_325bosch%2C1907_325electrolux&pf=discount.any%2C1907_325bosch&sorting=relevance_asc");
         logger.info("Сайт открыт");
         driver.manage().window().maximize();
