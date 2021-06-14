@@ -14,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactsPage;
+import pages.LoginPage;
 
 import java.io.File;
 import java.io.IOException;
@@ -45,16 +46,16 @@ public class TestLesson9 {
     }
 
     public void auth() {
+        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+
     String login = "malina.katrina@gmail.com";
     String password = "123456";
-//    String locatorAuth = "//button[contains(text(), 'Вход')]";
-    String locatorAuth = "body > div.body-wrapper > div > header.header2.header2_non-auth > div > div.header2__right > div.header2__auth-container > button";
-    driver.findElement(By.cssSelector(locatorAuth)).click();
-    driver.findElement(By.cssSelector("div.new-input-line_slim:nth-child(3) > input:nth-child(1)")).sendKeys(login);
+    loginPage.ButtonEntrance.click();
+    loginPage.loginInput.sendKeys(login);
     logger.info("Введен логин");
-    driver.findElement(By.cssSelector(".js-psw-input")).sendKeys(password);
+    loginPage.passwordInput.sendKeys(password);
     logger.info("Введен пароль");
-    driver.findElement(By.cssSelector("div.new-input-line_last:nth-child(5) > button:nth-child(1)")).submit();
+    loginPage.submitForm.submit();
     logger.info("Авторизация успешна");
     }
 
@@ -75,6 +76,7 @@ public class TestLesson9 {
     public void personalDataOfOtus() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver,10);
         ContactsPage contactsPage = PageFactory.initElements(driver, ContactsPage.class);
+        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 
         //1. Открыть otus.ru
         driver.get(("https://otus.ru"));
@@ -88,7 +90,7 @@ public class TestLesson9 {
 //        logger.info("Убираем всплывашку про Куки");
 
         //2. Авторизоваться на сайте
-        auth();
+        loginPage.auth();
         //3. Войти в личный кабинет
         enterLK();
         //4. В разделе "О себе" заполнить все поля "Личные данные" и добавить не менее двух контактов
@@ -145,18 +147,20 @@ public class TestLesson9 {
         logger.info("Драйвер поднят");
         driver.get(("https://otus.ru"));
         //7. Авторизоваться на сайте
+//        loginPage.auth();
         auth();
         //8. Войти в личный кабинет
         enterLK();
         //9. Проверить, что в разделе о себе отображаются указанные ранее данные
-        Assert.assertEquals("Екатерина", driver.findElement(By.id("id_fname")).getAttribute("value"));
-        Assert.assertEquals("Ekaterina", driver.findElement(By.id("id_fname_latin")).getAttribute("value"));
-        Assert.assertEquals("Малинкина", driver.findElement(By.id("id_lname")).getAttribute("value"));
-        Assert.assertEquals("Malinkina", driver.findElement(By.id("id_lname_latin")).getAttribute("value"));
-        Assert.assertEquals("01.01.2000", driver.findElement(By.cssSelector(".input-icon > input:nth-child(1)")).getAttribute("value"));
-        Assert.assertEquals("Россия", driver.findElement(By.cssSelector(".js-lk-cv-dependent-master > label:nth-child(1) > div:nth-child(2)")).getText());
-        Assert.assertEquals("Москва", driver.findElement(By.cssSelector(".js-lk-cv-dependent-slave-city > label:nth-child(1) > div:nth-child(2)")).getText());
-        Assert.assertEquals("Начальный уровень (Beginner)", driver.findElement(By.cssSelector("div.container__col_12:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > label:nth-child(1) > div:nth-child(2)")).getText());
+        System.out.println("Привет!");
+        Assert.assertEquals( "Ошибка в имени","Екатерина", driver.findElement(By.id("id_fname")).getAttribute("value"));
+        Assert.assertEquals("Ошибка в имени на латинском","Ekaterina", driver.findElement(By.id("id_fname_latin")).getAttribute("value"));
+        Assert.assertEquals("Ошибка в фамилии","Малинкина", driver.findElement(By.id("id_lname")).getAttribute("value"));
+        Assert.assertEquals("Ошибка в фамилии на латинском","Malinkina", driver.findElement(By.id("id_lname_latin")).getAttribute("value"));
+        Assert.assertEquals("Ошибка в дате рождения","01.01.2000", driver.findElement(By.cssSelector(".input-icon > input:nth-child(1)")).getAttribute("value"));
+        Assert.assertEquals("Ошибка в стране","Россия", driver.findElement(By.cssSelector(".js-lk-cv-dependent-master > label:nth-child(1) > div:nth-child(2)")).getText());
+        Assert.assertEquals("Ошибка в городе","Москва", driver.findElement(By.cssSelector(".js-lk-cv-dependent-slave-city > label:nth-child(1) > div:nth-child(2)")).getText());
+        Assert.assertEquals("Ошибка в уровне англ.","Начальный уровень (Beginner)", driver.findElement(By.cssSelector("div.container__col_12:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > label:nth-child(1) > div:nth-child(2)")).getText());
     }
 
 }

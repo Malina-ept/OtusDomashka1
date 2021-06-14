@@ -1,5 +1,7 @@
 package pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,6 +9,17 @@ import org.openqa.selenium.support.FindBy;
 public class ContactsPage {
 
     private final WebDriver driver;
+    private Logger logger = LogManager.getLogger(ContactsPage.class);
+
+    public void enterLK() throws InterruptedException {
+        //String locatorLK = ".ic-blog-default-avatar";
+        //WebElement avatar = driver.findElement(By.cssSelector(locatorLK));
+        //Actions actions = new Actions(driver);
+        //actions.moveToElement(avatar).build().perform();
+        Thread.sleep(1000);
+        driver.get("https://otus.ru/lk/biography/personal/");
+        logger.info("Открыт личный кабинет");
+    }
 
     @FindBy(id = "id_fname")
     public WebElement name;
