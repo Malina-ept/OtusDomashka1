@@ -17,8 +17,10 @@ import pages.ContactsPage;
 import pages.LoginPage;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Instant;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
@@ -47,12 +49,22 @@ public class TestLesson9 {
 
     public void auth() {
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+//        FileInputStream fis;
+//        Properties property = new Properties();
+//
+//        try {
+//            fis = new FileInputStream("src/main/resources/config.properties");
+//            property.load(fis);
+//            String login = property.getProperty("login");
+//            String password = property.getProperty("password");
 
     String login = "malina.katrina@gmail.com";
     String password = "123456";
     loginPage.ButtonEntrance.click();
+//    loginPage.loginInput.sendKeys(property.getProperty("login"));
     loginPage.loginInput.sendKeys(login);
     logger.info("Введен логин");
+//    loginPage.passwordInput.sendKeys(property.getProperty("password"));
     loginPage.passwordInput.sendKeys(password);
     logger.info("Введен пароль");
     loginPage.submitForm.submit();
@@ -60,10 +72,7 @@ public class TestLesson9 {
     }
 
     public void enterLK() throws InterruptedException {
-    //String locatorLK = ".ic-blog-default-avatar";
-    //WebElement avatar = driver.findElement(By.cssSelector(locatorLK));
-    //Actions actions = new Actions(driver);
-    //actions.moveToElement(avatar).build().perform();
+
     Thread.sleep(1000);
     driver.get("https://otus.ru/lk/biography/personal/");
     logger.info("Открыт личный кабинет");
@@ -92,8 +101,8 @@ public class TestLesson9 {
         //2. Авторизоваться на сайте
         loginPage.auth();
         //3. Войти в личный кабинет
-        enterLK();
-        //4. В разделе "О себе" заполнить все поля "Личные данные" и добавить не менее двух контактов
+        contactsPage.enterLK();
+        //4. В разделе "О себе" заполнить все поля "Личные данные"
         contactsPage.name.clear();
         contactsPage.nameLatin.clear();
         contactsPage.lastName.clear();
@@ -126,16 +135,6 @@ public class TestLesson9 {
             contactsPage.englishLevel.click();
             contactsPage.englishLevelBeginner.click();
         }
-        //Добавить два контакта
-//        driver.findElement(By.xpath("//button[contains(text(), 'Добавить')]")).click();
-//        driver.findElement(By.xpath("//span[contains(text(), 'Способ связи')]")).click();
-//        driver.findElement(By.cssSelector("body > div.body-wrapper > div > div.js-lk-cv > div.container.container-padding-bottom > div.container__row > div.container__col.container__col_9.container__col_md-8.container__col_sm-12.container__col_border-left.lk-rightbar.print-block.print-wide > div > form > div:nth-child(2) > div.container__col.container__col_12 > div:nth-child(2) > div.js-formset > div > div:nth-child(4) > div.container__col.container__col_9.container__col_ssm-12 > div > div > div > div > div > button:nth-child(2)")).click();
-//        driver.findElement(By.id("id_contact-0-value")).sendKeys("malinki");
-//
-//        driver.findElement(By.xpath("//button[contains(text(), 'Добавить')]")).click();
-//        driver.findElement(By.xpath("//span[contains(text(), 'Способ связи')]")).click();
-//        driver.findElement(By.cssSelector("body > div.body-wrapper > div > div.js-lk-cv > div.container.container-padding-bottom > div.container__row > div.container__col.container__col_9.container__col_md-8.container__col_sm-12.container__col_border-left.lk-rightbar.print-block.print-wide > div > form > div:nth-child(2) > div.container__col.container__col_12 > div:nth-child(2) > div.js-formset > div > div:nth-child(3) > div.container__col.container__col_9.container__col_ssm-12 > div > div > div > div > div > button:nth-child(5)")).click();
-//        driver.findElement(By.id("id_contact-1-value")).sendKeys("malinki");
 
         //5. Нажать сохранить
         contactsPage.saveButton.click();
@@ -146,6 +145,7 @@ public class TestLesson9 {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         logger.info("Драйвер поднят");
         driver.get(("https://otus.ru"));
+
         //7. Авторизоваться на сайте
 //        loginPage.auth();
         auth();

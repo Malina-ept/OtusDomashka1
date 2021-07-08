@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Properties;
+
 public class LoginPage {
 
     private final WebDriver driver;
@@ -29,7 +31,10 @@ public class LoginPage {
     public WebElement submitForm;
 
     public void auth() {
-
+//        Properties property = new Properties();
+//
+//        String login = property.getProperty("login");
+//        String password = property.getProperty("password");
         String login = "malina.katrina@gmail.com";
         String password = "123456";
         ButtonEntrance.click();
