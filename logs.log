@@ -1337,3 +1337,118 @@
 2021-06-13 12:38:52,221 INFO TestLesson9 [main] Введен пароль
 2021-06-13 12:38:52,248 INFO TestLesson9 [main] Авторизация успешна
 2021-06-13 12:38:55,524 INFO TestLesson9 [main] Открыт личный кабинет
+2021-07-11 12:33:23,794 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 12:33:30,344 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 12:33:30,520 INFO TestLesson8 [main] Открыто окно браузера 1900*800
+2021-07-11 12:33:30,520 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 12:33:30,760 INFO TestLesson8 [main] Открыто меню Каталог товаров
+2021-07-11 13:08:43,522 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 13:09:08,122 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 13:09:08,266 INFO TestLesson8 [main] Открыто окно браузера 1900*800
+2021-07-11 13:09:08,266 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 13:09:08,522 INFO TestLesson8 [main] Открыто меню Каталог товаров
+2021-07-11 13:09:15,130 INFO TestLesson8 [main] Открыта страница Стиральные машины
+2021-07-11 13:09:15,130 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 13:11:27,989 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 13:11:52,247 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 13:11:52,391 INFO TestLesson8 [main] Открыто окно браузера 1900*800
+2021-07-11 13:12:26,350 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 13:12:26,886 INFO TestLesson8 [main] Чекбокс BOSCH выбран
+2021-07-11 13:12:26,886 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 13:12:27,999 INFO TestLesson8 [main] Чекбокс Electrolux выбран
+2021-07-11 13:12:28,175 INFO TestLesson8 [main] Отсортируем полученные результаты по цене
+2021-07-11 14:50:04,535 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 14:50:13,245 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 14:50:13,370 INFO TestLesson8 [main] Открыто окно браузера 1900*800
+2021-07-11 14:50:13,370 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 14:50:13,473 INFO TestLesson8 [main] Открыто меню Каталог товаров
+2021-07-11 14:50:17,382 INFO TestLesson8 [main] Открыта страница Стиральные машины
+2021-07-11 14:50:17,382 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 14:50:17,911 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 14:50:18,096 INFO TestLesson8 [main] Чекбокс Electrolux выбран
+2021-07-11 14:50:18,175 INFO TestLesson8 [main] Отсортируем полученные результаты по цене
+2021-07-11 14:52:15,729 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 14:53:00,167 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 14:53:00,301 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 14:53:00,301 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 14:53:00,410 INFO TestLesson8 [main] Открыто меню Каталог товаров
+2021-07-11 14:54:08,237 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 14:54:40,722 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 14:54:40,875 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 14:54:40,875 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 14:54:44,169 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 14:54:44,355 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 14:54:44,496 INFO TestLesson8 [main] Чекбокс Electrolux выбран
+2021-07-11 14:54:44,582 INFO TestLesson8 [main] Отсортируем полученные результаты по цене
+2021-07-11 14:54:44,686 INFO TestLesson8 [main] Выберем первую в списке BOSCH
+2021-07-11 14:54:44,757 INFO TestLesson8 [main] А теперь Выберем первую в списке ELECTROLUX
+2021-07-11 14:54:44,804 INFO TestLesson8 [main] Выбраны для сравнения первая BOSCH и первая ELECTROLUX
+2021-07-11 14:54:44,804 INFO TestLesson8 [main] Перейдём на страницу сравнения
+2021-07-11 14:54:46,552 INFO TestLesson8 [main] Открыта страница сравнения
+2021-07-11 14:54:46,581 INFO TestLesson8 [main] На странице сравнения есть ELECTROLUX и BOSCH
+2021-07-11 15:06:02,069 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:06:25,787 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:06:25,938 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:06:25,939 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 15:06:29,320 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:06:29,498 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 15:09:24,266 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:09:28,186 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:09:28,386 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:09:28,386 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 15:09:31,320 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:09:31,503 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 15:09:31,569 INFO TestLesson8 [main] Enabled -true
+2021-07-11 15:09:31,622 INFO TestLesson8 [main] Displayed - false
+2021-07-11 15:09:31,704 INFO TestLesson8 [main] Чекбокс Electrolux выбран
+2021-07-11 15:09:31,775 INFO TestLesson8 [main] Отсортируем полученные результаты по цене
+2021-07-11 15:09:31,855 INFO TestLesson8 [main] Выберем первую в списке BOSCH
+2021-07-11 15:09:31,921 INFO TestLesson8 [main] А теперь Выберем первую в списке ELECTROLUX
+2021-07-11 15:09:31,971 INFO TestLesson8 [main] Выбраны для сравнения первая BOSCH и первая ELECTROLUX
+2021-07-11 15:09:31,972 INFO TestLesson8 [main] Перейдём на страницу сравнения
+2021-07-11 15:09:33,818 INFO TestLesson8 [main] Открыта страница сравнения
+2021-07-11 15:09:33,915 INFO TestLesson8 [main] На странице сравнения есть ELECTROLUX и BOSCH
+2021-07-11 15:17:17,523 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:17:42,085 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:17:42,253 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:17:42,253 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 15:18:15,787 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:18:15,995 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 15:18:16,136 INFO TestLesson8 [main] Чекбокс Electrolux выбран
+2021-07-11 15:18:16,203 INFO TestLesson8 [main] Отсортируем полученные результаты по цене
+2021-07-11 15:18:16,277 INFO TestLesson8 [main] Выберем первую в списке BOSCH
+2021-07-11 15:18:16,347 INFO TestLesson8 [main] А теперь Выберем первую в списке ELECTROLUX
+2021-07-11 15:18:16,389 INFO TestLesson8 [main] Выбраны для сравнения первая BOSCH и первая ELECTROLUX
+2021-07-11 15:18:16,389 INFO TestLesson8 [main] Перейдём на страницу сравнения
+2021-07-11 15:18:18,384 INFO TestLesson8 [main] Открыта страница сравнения
+2021-07-11 15:18:18,416 INFO TestLesson8 [main] На странице сравнения есть ELECTROLUX и BOSCH
+2021-07-11 15:19:23,859 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:20:14,100 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:20:14,226 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:20:14,226 INFO TestLesson8 [main] Переходим в раздел Бытовая техника-Стиральные машины
+2021-07-11 15:20:14,351 INFO TestLesson8 [main] Открыто меню Каталог товаров
+2021-07-11 15:20:28,922 INFO TestLesson8 [main] Открыта страница Стиральные машины
+2021-07-11 15:20:28,922 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:21:31,115 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:21:52,981 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:21:57,321 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:21:57,472 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:22:32,819 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:24:18,515 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:24:22,233 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:24:22,403 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:24:25,332 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:25:43,472 INFO TestLesson8 [main] Драйвер поднят
+2021-07-11 15:26:18,211 INFO TestLesson8 [main] Сайт открыт
+2021-07-11 15:26:18,357 INFO TestLesson8 [main] Открыто окно браузера на полный экран
+2021-07-11 15:26:51,416 INFO TestLesson8 [main] Выберем на странице чекбокс BOSCH
+2021-07-11 15:26:51,664 INFO TestLesson8 [main] Чекбокс BOSCH выбран
+2021-07-11 15:26:51,664 INFO TestLesson8 [main] Выберем на странице чекбокс Electrolux
+2021-07-11 15:26:51,802 INFO TestLesson8 [main] Чекбокс Electrolux выбран
+2021-07-11 15:26:51,888 INFO TestLesson8 [main] Отсортируем полученные результаты по цене
+2021-07-11 15:26:51,985 INFO TestLesson8 [main] Выберем первую в списке BOSCH
+2021-07-11 15:26:52,050 INFO TestLesson8 [main] А теперь Выберем первую в списке ELECTROLUX
+2021-07-11 15:26:52,099 INFO TestLesson8 [main] Выбраны для сравнения первая BOSCH и первая ELECTROLUX
+2021-07-11 15:26:52,100 INFO TestLesson8 [main] Перейдём на страницу сравнения
+2021-07-11 15:26:54,075 INFO TestLesson8 [main] Открыта страница сравнения
+2021-07-11 15:26:54,099 INFO TestLesson8 [main] На странице сравнения есть ELECTROLUX и BOSCH
