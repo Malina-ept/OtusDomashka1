@@ -8,23 +8,19 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class TestLesson8 {
 
     private Logger logger = LogManager.getLogger(TestLesson8.class);
     protected WebDriver driver;
-    private Instant wait;
+
 
     @Before
     public void StartUp() {
@@ -43,7 +39,6 @@ public class TestLesson8 {
 
     @Test
     public void compareTwoProductsInCitylink() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver,10);
 
         driver.get("https://www.citilink.ru/");
         logger.info("Сайт открыт");
@@ -71,7 +66,7 @@ public class TestLesson8 {
 
         logger.info("Выберем на странице чекбокс Electrolux");
         WebElement electroluxCheckbox = driver.findElement(By.xpath("//input[@id='electrolux']"));
-        ex.executeScript("arguments[0].click()", boshCheckbox);
+        ex.executeScript("arguments[0].click()", electroluxCheckbox);
         logger.info("Чекбокс Electrolux выбран");
 
         WebElement sortPrice = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@data-alias='price']")));
@@ -97,12 +92,4 @@ public class TestLesson8 {
         logger.info("На странице сравнения есть ELECTROLUX и BOSCH");
     }
 
-        private void saveFile(File data) {
-        String fileName = "target/" + System.currentTimeMillis() + ".png";
-        try {
-            FileUtils.copyFile(data, new File(fileName));
-        } catch (IOException e) {
-            logger.error(e);
-        }
-    }
 }
